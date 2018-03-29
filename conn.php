@@ -8,7 +8,7 @@ class conn {
 		$this->connect();
 	}
 	function connect() {
-		$this->mysqli = new mysqli("183.66.65.246:30796", "root", "NewtouchOne123", "libsystem");
+		$this->mysqli = new mysqli("183.66.65.246", "root", "NewtouchOne123", "libsystem",30796);
 		if (mysqli_connect_errno()) {
 			die("Can not connect to mysql server");
 		}
